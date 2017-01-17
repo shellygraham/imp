@@ -1,0 +1,45 @@
+/************************************************
+
+Stylesheet: Style Guide stylesheet
+
+*************************************************/
+.sg-container{
+	section {
+		@include grid-row(10);
+	}
+	.sg-title {
+		text-align: center;
+	}
+	.sg-nav {
+		@include grid-column(8);
+		@include grid-column-position(center);
+		.menu {
+			margin: 0 auto;
+		}
+	}
+	#sg-colors {
+		margin-top: 50px;
+		.sg-color {
+			@include grid-column(2);
+			height: 150px;
+			color: $white;
+			text-align: center;
+			padding-top: 50px;
+		}
+		.sg-color-primary {
+			background-color: $primary-color;
+		}
+		.sg-color-secondary {
+			background-color: $secondary-color;
+		}
+		.sg-color-success {
+			background-color: $success-color;
+		}
+		.sg-color-warning {
+			background-color: $warning-color;
+		}
+		.sg-color-alert {
+			background-color: $alert-color;
+		}
+	}
+}
